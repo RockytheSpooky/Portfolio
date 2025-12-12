@@ -12,9 +12,10 @@ body {
     padding: 0;
     background: var(--light);
     color: var(--text);
+    transition: background 0.3s, color 0.3s;
 }
 
-
+/* Header and navigation */
 header {
     background: var(--dark);
     padding: 20px 0;
@@ -44,23 +45,34 @@ nav a:hover {
     color: var(--gold);
 }
 
-/* the page structure */
+/* Page structure */
 .container {
     width: 90%;
     max-width: 900px;
     margin: 40px auto;
 }
 
-/* the cards */
+/* Cards */
 .card {
     background: white;
     padding: 20px;
     border-radius: 8px;
     border: 1px solid var(--gray);
     margin-bottom: 20px;
+    transition: background 0.3s, color 0.3s;
 }
 
-/* the buttons */
+/* Images inside cards */
+.card img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+/* Buttons */
 button {
     background: var(--gold);
     border: none;
@@ -75,7 +87,7 @@ button:hover {
     opacity: 0.85;
 }
 
-/* the forms */
+/* Forms */
 input, textarea, select {
     width: 100%;
     padding: 10px;
@@ -85,11 +97,40 @@ input, textarea, select {
     font-size: 15px;
 }
 
-/* the footer */
+/* Footer */
 footer {
     text-align: center;
     padding: 15px 0;
     background: var(--dark);
     color: white;
     margin-top: 40px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background: var(--dark);
+    color: var(--light);
+}
+
+body.dark-mode header {
+    background: var(--light);
+}
+
+body.dark-mode nav a {
+    color: var(--dark);
+}
+
+body.dark-mode nav a:hover {
+    color: var(--gold);
+}
+
+body.dark-mode .card {
+    background: var(--dark);
+    color: var(--light);
+    border: 1px solid var(--gray);
+}
+
+body.dark-mode button {
+    background: var(--gold);
+    color: black;
 }
