@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
 
+<header>
+    <nav>
+        <h1>My Portfolio</h1>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Contact Form</h2>
+
+        <form onsubmit="return validateForm()">
+            <label>Name</label>
+            <input id="name" type="text">
+
+            <label>Message</label>
+            <textarea id="message" rows="4"></textarea>
+
+            <label>Reason for Contact</label>
+            <select>
+                <option>General Question</option>
+                <option>Feedback</option>
+                <option>Other</option>
+            </select>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    © 2025 Portfolio Project
+</footer>
+
+</body>
+</html>
