@@ -1,1 +1,95 @@
+:root {
+    --gold: #EAB308;
+    --dark: #1f1f1f;
+    --light: #f8f8f8;
+    --gray: #e5e5e5;
+    --text: #333;
+}
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--light);
+    color: var(--text);
+}
+
+
+header {
+    background: var(--dark);
+    padding: 20px 0;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: var(--gold);
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+/* the page structure */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* the cards */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--gray);
+    margin-bottom: 20px;
+}
+
+/* the buttons */
+button {
+    background: var(--gold);
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* the forms */
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 6px;
+    border: 1px solid var(--gray);
+    font-size: 15px;
+}
+
+/* the footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: var(--dark);
+    color: white;
+    margin-top: 40px;
+}
